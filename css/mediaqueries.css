@@ -1,0 +1,88 @@
+
+@media all and (min-width: 40em) {
+	header > button {
+		flex-direction: row;
+		width: auto;
+		padding: 0 2.5%;
+	}
+	header > button img {
+		height: 2.34375em;
+	}
+	header > button label {
+		font-size: 1.25em;
+	}
+	
+	article {
+		width: 45%;
+	}
+	
+	nav > form fieldset {
+		max-width: 50em;
+	}
+	nav > form fieldset li {
+		width: 33.33333333333333%;
+	}
+	nav form input:not([type="checkbox"]) {
+		padding: 2.5%;
+	}
+}
+
+@media all and (min-width: 50em) {
+	section {
+		width: 97.5%;
+		padding: 1.25%;
+		margin: 1.25%;
+	}
+	section h2 {
+		margin: 1.25%;
+	}
+	section > button {
+		width: 30.83333333333333%;
+		margin: 1.25%;
+	}
+	
+	article {
+		width: 47.5%;
+		padding: 2.5%;
+		margin: 1.25%;
+	}
+	article div {
+		margin: 2.5% 0;
+	}
+	
+	nav div {
+		width: 97.5%;
+		margin: 1.25%;
+	}
+	nav > form fieldset {
+		width: 50%;
+		margin: 1.25% auto;
+	}
+	nav > form fieldset legend {
+		padding: 1.25%;
+	}
+	nav > form fieldset ul {
+		margin: 1.25% 0;
+	}
+	nav > form fieldset li {
+		width: 50%;
+	}
+	nav form {
+		width: 97.5%;
+		margin: 1.25%;
+	}
+	nav form input:not([type="checkbox"]) {
+		padding: 1.25%;
+		margin: 2.5% auto;
+	}
+	nav form input[type="submit"] {
+		padding: 0;
+		margin: 2.5% auto;
+	}
+}
+
+@media all and (min-width: 60em) {
+	article {
+		width: 30.83333333333333%;
+	}
+}
