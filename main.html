@@ -1,0 +1,191 @@
+<!DOCTYPE html >
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overzichtspagina</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+
+</head>
+
+<body>
+    <header>
+        <button type="button" name="btn-filter">
+            <img alt="" src="images/funnel.png">
+            <label>Filter</label>
+        </button>
+        <form>
+            <input type="text" name="search" placeholder="Zoek een verhaal">
+            <input type="submit" name="btn-search" value="">
+        </form>
+        <button type="button" name="btn-profile">
+            <img alt="" src="images/avatar.png">
+            <label>Profiel</label>
+        </button>
+    </header>
+<div class="slideshowcontainer">
+  <img alt="" class="slideshow" src="images/verhalen/baantjer%20Tico.jpg">
+  <img alt="" class="slideshow" src="images/verhalen/sportcommentator%20tico.jpg">
+  <img alt="" class="slideshow" src="images/verhalen/vrijdag13.png">
+    <div id="pijltjes">
+    <div class="leftclick" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="rightclick" onclick="plusDivs(1)">&#10095;</div>
+    </div>
+</div>
+    <main>        <section>
+            <h2>Sorteren op</h2>
+            <button class="active" type="button" name="sorteer">Nieuw</button>
+            <button type="button" name="sorteer">Populair</button>
+            <button type="button" name="sorteer">A &rightarrow; Z</button>
+        </section>
+        <h1>Aanbevolen voor jou</h1>
+           <article>
+            <h2>Paranoia</h2>
+            <p>
+                Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. […]
+            </p>
+            <!--100-->
+            <a href="paranoia.html">lees verder</a>
+        </article>
+        <article>
+            <h2>Moe</h2>
+            <p>
+                De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen.[...]
+            </p>
+            <a href="moe.html">lees verder</a>
+        </article>
+        <article>
+            <h2>Verliefd</h2>
+            <p>
+                Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! [...]
+            </p>
+            <a href="verliefd.html">lees verder</a>
+        </article>
+    </main>
+    <nav id="filter">
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Genre</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="genre" value="fictie">
+                            <label>Fictie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="non-fictie">
+                            <label>Non-fictie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="correspondentie">
+                            <label>Correspondentie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="interview">
+                            <label>Interview</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="cartoons">
+                            <label>Cartoons</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="maatschappij">
+                            <label>Maatschappij</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="politiek">
+                            <label>Politiek</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="religie">
+                            <label>Religie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="kunst">
+                            <label>Kunst</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="handel">
+                            <label>Handel</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Kleur</legend>
+                       <ul>
+                        <li>
+                            <input type="checkbox" name="autor" value="max-j-molovich">
+                            <label>Rood</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="autor" value="ben-hoogeboom">
+                            <label>Zwart</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="oud-zeikwijf">
+                            <label>Geel</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="hugo-luijten">
+                            <label>Groen</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="grrrits">
+                            <label>Roze</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="jaap-de-paap">
+                            <label>Paars</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="tom-de-jager">
+                            <label>Blauw</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="kittekat">
+                            <label>Wit</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="vrouwke-van-stavast">
+                            <label>Bruin</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="de-verwarde-man">
+                            <label>Multi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div>
+                <input type="submit" name="btn-submit-filter" value="OK">
+            </div>
+        </form>
+    </nav>
+    <nav id="profile">
+        <div>
+            <button class="active" type="button" name="login">Inloggen</button>
+            <button type="button" name="signup">Registreren</button>
+        </div>
+        <div id="login">
+            <form>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Wachtwoord" required>
+                <input type="submit" name="btn-login" value="Inloggen">
+            </form>
+        </div>
+        <div id="signup">
+            <form>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Wachtwoord" required>
+                <input type="password" name="password" placeholder="Herhaal wachtwoord" required>
+                <input type="submit" name="btn-signup" value="Aanmaken">
+            </form>
+        </div>
+    </nav>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

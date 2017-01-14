@@ -1,0 +1,190 @@
+<!DOCTYPE html >
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paranoia</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+
+</head>
+
+<body>
+    <header>
+        <button type="button" name="btn-filter">
+            <img alt="" src="images/funnel.png">
+            <label>Filter</label>
+        </button>
+        <form>
+            <input type="text" name="search" placeholder="Zoek een verhaal">
+            <input type="submit" name="btn-search" value="">
+        </form>
+        <button type="button" name="btn-profile">
+            <img alt="" src="images/avatar.png">
+            <label>Profiel</label>
+        </button>
+    </header>
+
+    <nav id="filter">
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Genre</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="genre" value="fictie">
+                            <label>Fictie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="non-fictie">
+                            <label>Non-fictie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="correspondentie">
+                            <label>Correspondentie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="interview">
+                            <label>Interview</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="cartoons">
+                            <label>Cartoons</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="maatschappij">
+                            <label>Maatschappij</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="politiek">
+                            <label>Politiek</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="religie">
+                            <label>Religie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="kunst">
+                            <label>Kunst</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="genre" value="handel">
+                            <label>Handel</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Kleur</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="autor" value="max-j-molovich">
+                            <label>Rood</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="autor" value="ben-hoogeboom">
+                            <label>Zwart</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="oud-zeikwijf">
+                            <label>Geel</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="hugo-luijten">
+                            <label>Groen</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="grrrits">
+                            <label>Roze</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="jaap-de-paap">
+                            <label>Paars</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="tom-de-jager">
+                            <label>Blauw</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="kittekat">
+                            <label>Wit</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="vrouwke-van-stavast">
+                            <label>Bruin</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="author" value="de-verwarde-man">
+                            <label>Multi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div>
+                <input type="submit" name="btn-submit-filter" value="OK">
+            </div>
+        </form>
+    </nav>
+    <nav id="profile">
+        <div>
+            <button class="active" type="button" name="login">Inloggen</button>
+            <button type="button" name="signup">Registreren</button>
+        </div>
+        <div id="login">
+            <form>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Wachtwoord" required>
+                <input type="submit" name="btn-login" value="Inloggen">
+            </form>
+        </div>
+        <div id="signup">
+            <form>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Wachtwoord" required>
+                <input type="password" name="password" placeholder="Herhaal wachtwoord" required>
+                <input type="submit" name="btn-signup" value="Aanmaken">
+            </form>
+        </div>
+    </nav>
+
+    <main class="paranoia">
+        <div class="container_left">
+            <a href="main.html">Terug naar Home</a>
+            <fieldset class="results1">
+                <h2>Profiel</h2>
+                <ul>
+                    <li>
+                        <label>Opslaan</label>
+                        <select class="save">
+                            <option value="favo">Favorieten</option>
+                            <option value="later">Later lezen</option>
+
+                        </select>
+                        <input type="submit" class="ok" value="OK">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="review1">
+                <h2>Beoordelen</h2>
+                <ul>
+                    <li>
+                        <label>Cijfer (1/10)</label>
+                        <input class="cijfer" type="number" min="1" max="10">
+                        <input type="submit" class="ok" value="OK">
+                    </li>
+
+                </ul>
+            </fieldset>
+        </div>
+        <img alt="" class="verhaal2" src="images/verhalen/Verhaal%20moe.jpg">
+        <div class="container_right"></div>
+        <script type="text/javascript" src="js/script.js"></script>
+
+
+    </main>
+
+</body>
+
+</html>
